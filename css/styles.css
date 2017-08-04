@@ -1,0 +1,205 @@
+body {
+  font-family: 'Galdeano', sans-serif;
+}
+
+a {
+  color: #6379be;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f0f1f4;
+}
+
+h1 {
+  color: #1f2859;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.btn {
+  margin: 0;
+  border-radius: 0;
+  background-color: #6379be;
+  border: 0;
+  color: #fff;
+}
+
+.btn:hover {
+  color: #6379be;
+  background-color: #f0f1f4;
+}
+
+.container-narrow {
+  margin-bottom: -2em;
+  background-color: #fff;
+  padding: 1em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.padding-bottom {
+    padding-bottom: 2em;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden; max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#div0, #div1, #div2, #div3, #div4, #div5, #div6, #div7, #flickrinfo {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+#flickr, #nytimes {
+    width: 100%;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 1em;
+}
+
+.flickrinfo {
+  width: 100%;
+  margin-bottom: 2em;
+  padding: 1em;
+  background-color: #6379be;
+  color: #fff;
+}
+
+#twitter iframe {
+  width: 100%;
+  height: 500px;
+  border: 0px;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/*NY Times styles*/
+
+.sectionname {
+  text-transform: uppercase;
+  color: #1f2859;
+  margin-bottom: .3em;
+}
+
+.nytheadline {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: .3em;
+}
+
+.nytheadline a {
+  color: #6379be;
+}
+
+.nytheadline a:hover {
+  color: #1f2859;
+  text-decoration: none;
+}
+
+.byline {
+  text-transform: uppercase;
+}
+
+.date {
+  margin-bottom: .3em;
+  color: #2b3559;
+}
+
+/*twitter styles*/
+
+.twitteruserphoto {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: .5em;
+}
+
+.twittername {
+  font-size: 1.5em;
+  color: #6379be;
+  font-weight: 700;
+  margin-bottom: .1em;
+}
+
+.twittername a {
+  color: #6379be;
+}
+
+.twittername a:hover {
+  text-decoration: none;
+  color: #1f2859;
+}
+
+.twitteruser {
+  font-weight: 300;
+  margin-bottom: .5em;
+}
+
+.twitteruser a {
+  color: #1f2859;
+}
+
+.twitteruser a:hover {
+  text-decoration: none;
+  color: #6379be;
+}
+
+.twittertext {
+  margin-bottom: .2em;
+}
+
+.twittertext a {
+  font-weight: 700;
+  color: #1f2859;
+}
+
+.twittertext a:hover {
+  text-decoration: underline;
+  color: #6379be;
+}
+
+.twittertime {
+  font-size: .7em;
+  margin-bottom: .5em;
+}
+
+.twittertime a {
+  color: #1f2859;
+}
+
+.twittertime a:hover {
+  text-decoration: underline;
+}
+
+.twittertime a:visited {
+  text-decoration: none;
+}
+
+.twitterphoto {
+  /*max-width: 50%;*/
+}
+
+.twitterline {
+  border-bottom: 1px dashed #1f2859;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
