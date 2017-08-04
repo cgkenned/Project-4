@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>#DearBetsy</title>
-
+    <!-- favicon -->
+    <link rel="icon" href="images/hashtag.png">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Galdeano" rel="stylesheet">
+    <!-- my stylesheet -->
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,11 +24,66 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div id="main">
+      <div id="header">
+      <a href="#index" class="active" aria-controls="home" role="button" data-toggle="tab"><img src="images/betsy-header-image.png" class="img-responsive"></a>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a class="btn btn-block" href="#news" role="button" aria-controls="news" data-toggle="tab">news</a>
+          </div>
+          <div class="col-md-4">
+            <a class="btn btn-block pictures" href="#pictures" role="button" aria-controls="pictures" data-toggle="tab">photos</a>
+          </div>
+          <div class="col-md-4">
+            <a class="btn btn-block" href="#twitter" role="button" aria-controls="tweets" data-toggle="tab">tweets</a>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div id="index" class="tab-pane active">
+            <div class="container-narrow">
+              <p>On Thursday, July 13, 2017, U.S. Secretary of Education Betsy DeVos met with <a href="http://ncfm.org/" target="_blank">The National Coalition for Men</a> and <a href="http://www.saveservices.org/" target="_blank">Stop Abusive and Violent Environments</a>, both of which call themselves advocates for "men's rights." DeVos met with these groups in what she said was an effort to equally weigh the claims of university sexual assault victims and the due-process rights of the accused.</p>
+              <p>This came one day after Candice Jackson, DeVos' assistant secretary for civil rights, <a href="https://www.nytimes.com/2017/07/12/us/politics/campus-rape-betsy-devos-title-iv-education-trump-candice-jackson.html" target="_blank">told The New York Times</a> that campus sexual assault "accusations — 90 percent of them — fall into the category of, 'We were both drunk, we broke up, and six months later I found myself under a Title IX investigation because she just decided that our last sleeping together was not quite right.'" Jackson later apologized for the remark, calling it "flippant."</p>
+              <p>According to <a href="https://www.ncjrs.gov/pdffiles1/nij/grants/221153.pdf" target="_blank">The Campus Sexual Assault Study</a> conducted by the U.S. Department of Justice in 2007, less than 5% of sexual assault survivors on college campuses report the incident to a law enforcement agency. Of those who did not report the incident to law enforcement, the most frequently cited reason for not reporting was that survivors believed the event would not be considered serious enough by authorities.</p>
+            </div>
+            <div class="col-md-12 padding-bottom">
+              <h1>Campus Sexual Assault</h1>
+              <p>This map shows the results of <a href="https://www.washingtonpost.com/news/grade-point/wp/2016/06/07/these-colleges-have-the-most-reports-of-rape/?utm_term=.6f90d4d25b7c" target="_blank">a 2014 Washington Post investigation</a> on campuses with the highest reported sexual assaults. Red markers indicate colleges in the top 10 of total rape cases reported, and orange indicates those in the top 10 of rapes reported per 1,000 students.</p>
+                <div class='embed-container'><iframe src='https://www.google.com/maps/d/u/0/embed?mid=1QqJENZQGRplpg_DvzoAj6cpQ21o' width='640' height='480'></iframe></div>
+            </div>
+          <!-- #indexid div closes -->
+          </div>
+          <div id="news" class="tab-pane padding-bottom">
+            <h1>Latest News</h1>
+            <p>from the NYT</p>
+            <div id="nytimes"></div>
+          <!-- #news div closes -->
+          </div>
+          <div id="pictures" class="tab-pane padding-bottom">
+            <h1>Latest Photos</h1>
+            <p>tagged "sexual assault survivor"</p>
+            <div id="flickr"></div>
+          <!-- #pictures div closes -->
+          </div>
+          <div id="twitter" class="tab-pane padding-bottom">
+            <h1>Latest Tweets</h1>
+            <p>hashtagged #DearBetsy</p>
+            <div id="twitter"><iframe src="twitter.php"></iframe></div>
+          <!-- #twitter div closes -->
+          </div>
+        </div>
+    <!-- container div closes -->
+      </div>
+<!-- main div closes -->
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/flickr.js"></script>
   </body>
 </html>
